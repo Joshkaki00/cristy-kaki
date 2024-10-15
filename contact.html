@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Me!</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-form {
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%; /* Set it to a percentage */
+            max-width: 600px; /* Limit to 600px */
+            box-sizing: border-box; /* Include padding in width */
+        }
+        .contact-form h1 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .contact-form button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <nav id="page-redirects">
+        <a href="home-page.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="discography.html">Discography</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+        <h1>Contact Me!</h1>
+        <!-- Form action using mailto -->
+        <form action="mailto:jkwoflblitz523@gmail.com" method="get" enctype="text/plain">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+    <!-- Social Media Links -->
+    <div class="social-media">
+        <a href="https://instagram.com/joshkaki00" target="_blank" aria-label="Instagram" title="Instagram">
+            <img src="images/Instagram_logo_2016.svg.png" alt="Instagram Logo">
+        </a>
+        <a href="https://www.youtube.com/channel/UC0BqgNHgnjERFnv_Mjkk4UQ" target="_blank" aria-label="YouTube" title="YouTube">
+            <img src="images/red-youtube-logo-symbol-701751694792489qxkccchok1.png" alt="YouTube Logo">
+        </a>
+        <a href="https://traktrain.com/genzaburobeatz" target="_blank" aria-label="TrakTrain" title="TrakTrain">
+            <img src="images/261778538_5323560880994330_9194451043420295281_n.jpg" alt="TrakTrain Logo">
+        </a>
+    </div>
+
+    <footer>
+        <p>© 2024 by Genzaburo Beatz</p>
+    </footer>
+
+</body>
+</html>
