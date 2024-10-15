@@ -2,4 +2,4 @@
 This is my music website. It is currently a work in progress.
 
 ## Warning:
-This website is going through constant changes and development. Please be aware of this!
+THIS WEBSITE IS GOING THROUGH CONSTANT CHANGES AND DEVELOPMENT. PLEASE BE AWARE OF THIS!
