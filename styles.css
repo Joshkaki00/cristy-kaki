@@ -1,6 +1,6 @@
 /* General body styling */
 html, body {
-    height: 100%; /* Ensure body and html elements take full height of viewport */
+    height: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -31,18 +31,18 @@ body {
 /* Ensure 100% width for navigation bar */
 nav#page-redirects {
     background: rgba(255, 140, 0, 0.95);
-    padding: 15px;
+    padding: 10px; /* Reduced padding for mobile */
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    width: 100%; /* Set full width for the navigation */
-    box-sizing: border-box; /* Include padding in the width calculation */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 nav#page-redirects a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 8px 15px; /* Reduced padding for mobile */
+    font-size: 14px; /* Smaller font size */
     border-radius: 5px;
     text-transform: uppercase;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -53,35 +53,33 @@ nav#page-redirects a:hover {
     transform: scale(1.05);
 }
 
-/* Main content wrapper should also take full width, with padding for margins */
+/* Main content wrapper optimized for mobile */
 .main-content {
-    flex: 1; /* Main content will take up remaining space, pushing footer to bottom */
-    max-width: 900px;
-    margin: 60px auto;
-    padding: 40px;
+    flex: 1;
+    max-width: 95%; /* Increased width on mobile */
+    margin: 30px auto; /* Smaller margin */
+    padding: 20px; /* Reduced padding */
     background-color: rgba(255, 69, 0, 0.85); /* Fiery orange with slight opacity */
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(255, 140, 0, 0.8);
+    border-radius: 15px; /* Smaller radius */
+    box-shadow: 0 6px 15px rgba(255, 140, 0, 0.8); /* Smaller shadow */
     text-align: center;
     color: white;
-    width: 100%; /* Set full width */
-    box-sizing: border-box; /* Ensure padding is included in the width */
+    box-sizing: border-box;
 }
 
-/* Main content heading and text */
 .main-content h1 {
-    font-size: 36px;
+    font-size: 28px; /* Smaller heading for mobile */
     text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8); /* Stronger shadow for emphasis */
-    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    margin-bottom: 15px;
 }
 
 .main-content p {
-    font-size: 18px;
-    line-height: 1.8;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Shadow for readability */
-    margin-bottom: 20px;
+    font-size: 16px; /* Smaller paragraph size */
+    line-height: 1.6;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 15px;
     color: #ffffff;
 }
 
@@ -91,9 +89,9 @@ nav#page-redirects a:hover {
     color: #ffffff;
     text-decoration: none;
     background-color: #ff8c00;
-    padding: 12px 25px;
-    border-radius: 8px;
-    font-size: 18px;
+    padding: 10px 20px; /* Reduced padding for mobile */
+    border-radius: 6px; /* Smaller radius */
+    font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -104,25 +102,25 @@ nav#page-redirects a:hover {
     transform: scale(1.05);
 }
 
-/* Social media section */
+/* Social media section optimized for mobile */
 .social-media-container {
-    margin: 50px 0;
+    margin: 30px 0;
     text-align: center;
 }
 
 .social-media-container h3 {
-    font-size: 22px;
+    font-size: 20px; /* Reduced heading size */
     text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
-    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 15px;
     color: #ffffff;
 }
 
 .social-media {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px; /* Reduced gap for mobile */
 }
 
 .social-media a {
@@ -130,8 +128,8 @@ nav#page-redirects a:hover {
 }
 
 .social-media img {
-    width: 45px;
-    height: 45px;
+    width: 35px; /* Smaller social icons for mobile */
+    height: 35px;
     transition: transform 0.3s ease;
 }
 
@@ -139,67 +137,64 @@ nav#page-redirects a:hover {
     transform: scale(1.2);
 }
 
-/* Footer styling with corrected width */
+/* Footer styling optimized for mobile */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 15px; /* Smaller padding */
     background-color: rgba(26, 26, 26, 0.95);
     color: #ffffff;
-    font-size: 14px;
+    font-size: 12px; /* Smaller font size */
     width: 100%; /* Full width of the page */
-    max-width: 100vw; /* Ensure it does not overflow beyond the viewport width */
-    box-sizing: border-box; /* Include padding and border in width calculation */
+    max-width: 100vw;
+    box-sizing: border-box;
 }
 
-/* Media Queries for Responsiveness */
-
-/* Tablet screens and down */
+/* Media Queries for further fine-tuning */
+/* For screens below 768px (tablets and smaller) */
 @media (max-width: 768px) {
+    nav#page-redirects a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
     .main-content {
         padding: 20px;
         margin: 40px auto;
-        max-width: 90%; /* Make content width smaller on tablets */
-    }
-
-    nav#page-redirects a {
-        padding: 8px 15px;
-        font-size: 14px; /* Reduce font size for smaller screens */
     }
 
     .social-media img {
         width: 40px;
-        height: 40px; /* Adjust social media icons for smaller screens */
+        height: 40px;
     }
 }
 
-/* Mobile screens and down */
+/* For screens below 480px (small mobile devices) */
 @media (max-width: 480px) {
-    .main-content {
-        padding: 15px;
-        margin: 30px auto;
-        max-width: 95%; /* Make content width smaller on mobile */
-    }
-
     nav#page-redirects a {
         padding: 6px 10px;
-        font-size: 12px; /* Further reduce font size for mobile */
+        font-size: 12px;
     }
-
+    
     .main-content h1 {
-        font-size: 28px; /* Make heading smaller for mobile */
+        font-size: 24px; /* Further reduction for mobile */
     }
 
     .main-content p {
-        font-size: 16px; /* Adjust paragraph text size for mobile */
+        font-size: 14px; /* Adjusted text size */
+    }
+
+    .main-content a {
+        padding: 8px 16px;
+        font-size: 14px;
     }
 
     .social-media img {
-        width: 35px;
-        height: 35px; /* Make social media icons smaller for mobile */
+        width: 30px;
+        height: 30px; /* Smaller social icons */
     }
 
     footer {
-        font-size: 12px; /* Reduce footer font size for mobile */
-        padding: 15px; /* Adjust padding */
+        font-size: 10px; /* Smaller footer text */
+        padding: 10px;
     }
 }
