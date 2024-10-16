@@ -21,7 +21,7 @@ html, body {
     }
 }
 
-/* Use flexbox for layout */
+/* Flexbox layout to position footer at the bottom */
 body {
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@ body {
     max-width: 900px;
     margin: 60px auto;
     padding: 40px;
-    background-color: rgba(255, 69, 0, 0.85);
+    background-color: rgba(255, 69, 0, 0.85); /* Fiery orange with slight opacity */
     border-radius: 20px;
     box-shadow: 0 8px 20px rgba(255, 140, 0, 0.8);
     text-align: center;
@@ -63,18 +63,7 @@ nav#page-redirects a:hover {
     transform: scale(1.05);
 }
 
-/* Main content styling */
-.main-content {
-    max-width: 900px;
-    margin: 60px auto;
-    padding: 40px;
-    background-color: rgba(255, 69, 0, 0.85); /* Slight opacity for background */
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(255, 140, 0, 0.8);
-    text-align: center;
-    color: white;
-}
-
+/* Main content heading and text */
 .main-content h1 {
     font-size: 36px;
     text-transform: uppercase;
@@ -91,6 +80,7 @@ nav#page-redirects a:hover {
     color: #ffffff;
 }
 
+/* Buttons for the main content */
 .main-content a {
     display: inline-block;
     color: #ffffff;
@@ -109,7 +99,7 @@ nav#page-redirects a:hover {
     transform: scale(1.05);
 }
 
-/* Social media section styling */
+/* Social media section */
 .social-media-container {
     margin: 50px 0;
     text-align: center;
@@ -152,3 +142,4 @@ footer {
     color: #ffffff;
     font-size: 14px;
     width: 100%;
+}
