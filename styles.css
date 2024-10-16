@@ -41,7 +41,7 @@ nav#page-redirects a:hover {
 }
 
 /* Content styling */
-div.content {
+div.main-content {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -55,7 +55,7 @@ div.content {
     border: 2px solid #ff8c00; /* Bright orange border */
 }
 
-div.content h1 {
+div.main-content h1 {
     font-size: 36px; /* Reduced font size for better balance */
     font-family: 'Poppins', sans-serif; /* Clean and modern */
     color: #ffffff; /* Solid white for high contrast */
@@ -65,7 +65,7 @@ div.content h1 {
     margin-bottom: 20px;
 }
 
-div.content p {
+div.main-content p {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
