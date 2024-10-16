@@ -17,45 +17,49 @@
             margin: auto;
             overflow: hidden;
         }
+        /* Header styling matching the fiery theme */
         header {
-            background: linear-gradient(135deg, #4a90e2, #50c9ce); /* Vibrant gradient */
+            background: linear-gradient(135deg, #ff4500, #ff8c00, #ffb347); /* Fiery gradient */
             color: #fff;
-            padding: 0; /* Remove unnecessary padding */
-            min-height: 70px; /* Adjust height */
-            border-bottom: #77aaff 5px solid;
+            padding: 0;
+            min-height: 70px;
+            border-bottom: #ff4500 5px solid;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
             display: flex;
-            justify-content: center; /* Horizontally center content */
-            align-items: center; /* Vertically center content */
+            justify-content: center;
+            align-items: center;
         }
+
         header h1 {
             margin: 0;
             padding: 0;
-            font-size: 28px;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            font-size: 28px; /* Reduced font size for better balance */
+            font-family: 'Poppins', sans-serif; /* Clean, bold font */
+            text-transform: uppercase; /* Uppercase for a bold look */
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8), 0 0 10px #ff4500; /* Glowing fiery shadow */
         }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
+
+        /* Main content styling to match the theme */
         .main {
-            padding: 20px;
-            background: #fff;
+            padding: 40px;
+            background: rgba(255, 69, 0, 0.9); /* Fiery orange background */
             margin-top: 20px;
+            border-radius: 15px; /* Rounded corners for a smooth look */
+            box-shadow: 0px 4px 20px rgba(255, 140, 0, 0.8); /* Orange glow effect */
+            border: 2px solid #ff8c00; /* Orange border */
         }
+
         .single {
             margin-bottom: 20px;
         }
         .single a {
             text-decoration: none;
-            color: #333;
+            color: #fff; /* White text to contrast with fiery background */
             font-size: 18px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Text shadow for better readability */
         }
         .single a:hover {
-            color: #77aaff;
+            color: #77aaff; /* Light blue on hover */
         }
     </style>
 </head>
