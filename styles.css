@@ -164,15 +164,15 @@ footer a:hover {
 }
 
 /* Swipe transition effect */
-.swipe-enter {
-    animation: swipeIn 0.5s forwards ease-in-out;
+.content-swipe-enter {
+    animation: contentSwipeIn 0.5s forwards ease-in-out;
 }
 
-.swipe-exit {
-    animation: swipeOut 0.5s forwards ease-in-out;
+.content-swipe-exit {
+    animation: contentSwipeOut 0.5s forwards ease-in-out;
 }
 
-@keyframes swipeIn {
+@keyframes contentSwipeIn {
     from {
         transform: translateX(100%);
         opacity: 0;
@@ -183,7 +183,7 @@ footer a:hover {
     }
 }
 
-@keyframes swipeOut {
+@keyframes contentSwipeOut {
     from {
         transform: translateX(0);
         opacity: 1;
@@ -197,6 +197,12 @@ footer a:hover {
 /* Ensures that the body doesn't shift during animations */
 body {
     overflow-x: hidden;
+}
+
+/* Ensure nav and footer remain fixed */
+nav, footer {
+    position: relative; /* To keep them outside the swipe transitions */
+    z-index: 10; /* Make sure they stay on top */
 }
 
 /* Media Queries for Mobile Optimization */
