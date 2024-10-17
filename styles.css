@@ -48,3 +48,58 @@ button:hover {
     background-color: #45a049;
 }
 
+.page-redirect {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.page-redirect a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.page-redirect a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+footer {
+    position: relative;
+}
