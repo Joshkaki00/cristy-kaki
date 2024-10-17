@@ -1,142 +1,100 @@
-body {
-    font-family: Arial, sans-serif;
+/* General styling for the page */
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif; /* Clean and modern font */
+    background-color: #f0f0f0;
     color: #333;
-    display: flex;
-    flex-direction: column;
 }
 
-.container {
-    flex: 1; /* Make the container grow and take available space */
-}
-
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1em 0;
-    text-align: center;
-}
-
+/* Navigation styling */
 nav {
-    background-color: #4CAF50;
-    padding: 1em;
+    background-color: #333;
+    padding: 1.5em;
     text-align: center;
 }
 
 nav a {
-    color: white;
+    color: #fff;
     margin: 0 1em;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #f4b400; /* Bright yellow hover effect */
 }
 
-h1 {
-    margin: 0;
-    font-size: 2.5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 2em auto;
-    padding: 1em;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
+/* About section */
 #about {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Align items (paragraphs) to the left */
-    gap: 1.5em; /* Optional: Adds space between each paragraph */
+    max-width: 900px;
+    margin: 3em auto;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+    border-radius: 15px;
 }
 
-p {
-    margin: 0;
-    line-height: 1.6;
-    flex: 1; /* Allow paragraphs to stretch if necessary */
-    text-align: left; /* Ensure the text is left-aligned */
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 0.5em 1em;
+#about h1 {
+    font-size: 2.5em;
+    color: #f4b400; /* Bright artistic color for heading */
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1em;
-    margin: 1em 0;
-    cursor: pointer;
-    border-radius: 5px;
+    margin-bottom: 1.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
-button:hover {
-    background-color: #45a049;
+#about p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 1.5em;
+    text-align: justify; /* Better readability for the biography */
 }
 
-.page-redirect {
-    text-align: center;
-    margin-top: 2em;
+#about p:last-child {
+    margin-bottom: 0; /* Avoid extra space at the end */
 }
 
-.page-redirect a {
-    color: #4CAF50;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.page-redirect a:hover {
-    text-decoration: underline;
-}
-
+/* Footer styling */
 footer {
     background-color: #333;
-    color: white;
-    padding: 1em 0;
-    text-align: center; /* Center the content horizontally */
+    color: #fff;
+    padding: 1.5em 0;
+    text-align: center;
     width: 100%;
-    margin-top: auto; /* Push the footer to the bottom of the page */
-    position: relative; /* Ensures it is positioned at the end of the content */
+    position: relative; /* Normal positioning for footer */
 }
 
 footer p {
     margin: 0;
     font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-
-footer a {
-    color: #4CAF50;
+footer p a {
+    color: #f4b400;
     text-decoration: none;
 }
 
-footer a:hover {
+footer p a:hover {
     text-decoration: underline;
 }
 
-html, body {
-    height: 100%;
-}
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    #about {
+        padding: 1.5em;
+        margin: 1.5em;
+    }
 
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.container {
-    flex: 1;
-}
-
-footer {
-    position: relative;
+    #about h1 {
+        font-size: 2em;
+    }
 }
