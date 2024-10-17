@@ -163,11 +163,15 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Responsive styles */
+/* Media Queries for Mobile Optimization */
 @media (max-width: 768px) {
     nav a {
-        font-size: 16px;
-        margin: 0 10px;
+        display: block;
+        margin: 10px 0;
+    }
+
+    .welcome-container {
+        padding: 20px;
     }
 
     .welcome-container h1 {
@@ -179,33 +183,12 @@ footer a:hover {
     }
 
     .learn-more-btn {
-        font-size: 16px;
-        padding: 10px 20px;
-    }
-}
-
-/* Responsive styles for small screens (768px and smaller) */
-@media (max-width: 768px) {
-    nav a {
-        font-size: 16px;
-        margin: 0 10px;
-    }
-
-    .welcome-container h1 {
-        font-size: 36px;
-    }
-
-    .welcome-container p {
-        font-size: 18px;
-    }
-
-    .learn-more-btn {
-        font-size: 16px;
-        padding: 10px 20px;
+        width: 100%;
+        padding: 15px;
     }
 
     .follow-container h2 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .follow-container p {
@@ -213,8 +196,8 @@ footer a:hover {
     }
 
     .follow-btn {
-        font-size: 16px;
-        padding: 10px 20px;
+        width: 100%;
+        padding: 15px;
     }
 
     #about h1 {
@@ -222,56 +205,7 @@ footer a:hover {
     }
 
     #about p {
-        font-size: 16px;
-    }
-
-    footer p {
-        font-size: 14px;
+        text-align: center;
     }
 }
 
-/* Extra small screens (480px and smaller) */
-@media (max-width: 480px) {
-    nav a {
-        font-size: 14px;
-        margin: 0 8px;
-    }
-
-    .welcome-container h1 {
-        font-size: 30px;
-    }
-
-    .welcome-container p {
-        font-size: 16px;
-    }
-
-    .learn-more-btn {
-        font-size: 14px;
-        padding: 8px 15px;
-    }
-
-    .follow-container h2 {
-        font-size: 24px;
-    }
-
-    .follow-container p {
-        font-size: 14px;
-    }
-
-    .follow-btn {
-        font-size: 14px;
-        padding: 8px 15px;
-    }
-
-    #about h1 {
-        font-size: 30px;
-    }
-
-    #about p {
-        font-size: 14px;
-    }
-
-    footer p {
-        font-size: 12px;
-    }
-}
