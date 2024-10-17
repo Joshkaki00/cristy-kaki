@@ -163,6 +163,42 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Swipe transition effect */
+.swipe-enter {
+    animation: swipeIn 0.5s forwards ease-in-out;
+}
+
+.swipe-exit {
+    animation: swipeOut 0.5s forwards ease-in-out;
+}
+
+@keyframes swipeIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes swipeOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+/* Ensures that the body doesn't shift during animations */
+body {
+    overflow-x: hidden;
+}
+
 /* Media Queries for Mobile Optimization */
 @media (max-width: 768px) {
     nav a {
