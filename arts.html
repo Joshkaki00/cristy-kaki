@@ -7,41 +7,81 @@
     <link rel="stylesheet" href="styles.css">
     <title>Art Exhibition</title>
     <style>
+        /* General body styling */
         body {
             font-family: 'Playfair Display', serif;
             margin: 0;
             padding: 0;
+            background-color: #faf3e0;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            padding: 20px;
         }
+
+        /* Figure styling */
         figure {
             margin: 20px;
             text-align: center;
+            flex: 1 1 300px;
+            max-width: 300px;
         }
+
         img {
             max-width: 100%;
             height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
         figcaption {
             margin-top: 10px;
             font-size: 1.1em;
             color: #555;
+        }
+
+        /* Responsive styling for small screens */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            figure {
+                max-width: 90%;
+            }
         }
     </style>
 </head>
 <body>
     <figure>
         <img src="images_art/188922171_2476405545838473_1142829879236441984_n.jpg" alt="Countryside by Cristy Kaki">
-        <figcaption>Countryside by Cristy Kaki, 11" x 16" Gouache on canvas, 2021</figcaption>
+        <figcaption>Countryside by Cristy Kaki, 11" x 16" Gouache on canvas, © 2021</figcaption>
     </figure>
     <figure>
-        <img src="artwork2.jpg" alt="Artwork 2">
-        <figcaption>Artwork 2 by Artist B</figcaption>
+        <img src="images_art/IMG_0040.jpg" alt="Rural by Cristy Kaki">
+        <figcaption>Rural by Cristy Kaki, 9" x 12", Acrylic on canvas, © 2020</figcaption>
     </figure>
     <figure>
-        <img src="artwork3.jpg" alt="Artwork 3">
-        <figcaption>Artwork 3 by Artist C</figcaption>
+        <img src="images_art/IMG_0043.jpg" alt="Paradise Bird">
+        <figcaption>Paradise Bird by Cristy Kaki, 9" by 12", Mixed media, © 2020</figcaption>
+    </figure>
+    <figure>
+        <img src="images_art/IMG_0614.jpg" alt="Poodle Dogs">
+        <figcaption>Poodle Dogs by Cristy Kaki, Unknown dimensions, Unknown media, © 2020</figcaption>
+    </figure>
+    <figure>
+        <img src="images_art/IMG_0848.jpg" alt="Hotel Hallway">
+        <figcaption>Hotel Hallway by Cristy Kaki, 24" by 18", Acrylic on canvas, © 2020</figcaption>
+    </figure>
+    <figure>
+        <img src="images_art/Portrait_of_a_Black_Woman.jpg" alt="Portrait of Black Woman">
+        <figcaption>Portrait of a Black Woman by Cristy Kaki, Unknown dimensions, Unknown media, © 2020</figcaption>
     </figure>
 </body>
 </html>
