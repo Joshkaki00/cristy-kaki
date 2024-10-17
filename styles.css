@@ -96,6 +96,10 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+#about p {
+    text-align: left;
+}
+
 /* Footer styles */
 footer {
     background-color: #2c3e50;
