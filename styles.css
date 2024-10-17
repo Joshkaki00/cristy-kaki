@@ -183,3 +183,95 @@ footer a:hover {
         padding: 10px 20px;
     }
 }
+
+/* Responsive styles for small screens (768px and smaller) */
+@media (max-width: 768px) {
+    nav a {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+
+    .welcome-container h1 {
+        font-size: 36px;
+    }
+
+    .welcome-container p {
+        font-size: 18px;
+    }
+
+    .learn-more-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .follow-container h2 {
+        font-size: 30px;
+    }
+
+    .follow-container p {
+        font-size: 16px;
+    }
+
+    .follow-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    #about h1 {
+        font-size: 36px;
+    }
+
+    #about p {
+        font-size: 16px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+/* Extra small screens (480px and smaller) */
+@media (max-width: 480px) {
+    nav a {
+        font-size: 14px;
+        margin: 0 8px;
+    }
+
+    .welcome-container h1 {
+        font-size: 30px;
+    }
+
+    .welcome-container p {
+        font-size: 16px;
+    }
+
+    .learn-more-btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .follow-container h2 {
+        font-size: 24px;
+    }
+
+    .follow-container p {
+        font-size: 14px;
+    }
+
+    .follow-btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    #about h1 {
+        font-size: 30px;
+    }
+
+    #about p {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
