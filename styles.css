@@ -1,74 +1,96 @@
-/* General styling for the page */
+/* General body styling */
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif; /* Clean and modern font */
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #f0f0f0; /* Light neutral background */
+    color: #333; /* Dark gray text for readability */
 }
 
-/* Navigation styling */
+/* Navigation styling (applies to all pages) */
 nav {
-    background-color: #333;
+    background-color: #333; /* Consistent dark background */
     padding: 1.5em;
     text-align: center;
 }
 
 nav a {
-    color: #fff;
-    margin: 0 1em;
+    color: #fff; /* White text for contrast */
+    margin: 0 1.5em;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2em;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    text-transform: uppercase; /* Adds modern, consistent style */
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #f4b400; /* Bright yellow hover effect */
+    color: #f4b400; /* Bright yellow hover effect across all pages */
 }
 
-/* About section */
-#about {
+/* Consistent container styling for content areas */
+.container {
     max-width: 900px;
     margin: 3em auto;
     padding: 2em;
     background-color: #fff;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
-    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border-radius: 15px; /* Rounded corners for modern feel */
 }
 
-#about h1 {
+/* Consistent heading styles for all pages */
+h1 {
     font-size: 2.5em;
-    color: #f4b400; /* Bright artistic color for heading */
+    color: #f4b400; /* Bright yellow for artsy vibe */
     text-align: center;
     margin-bottom: 1.5em;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-#about p {
+/* Paragraph text styling */
+p {
     font-size: 1.1em;
     line-height: 1.8;
     color: #333;
     margin-bottom: 1.5em;
-    text-align: justify; /* Better readability for the biography */
+    text-align: justify;
 }
 
-#about p:last-child {
-    margin-bottom: 0; /* Avoid extra space at the end */
+p:last-child {
+    margin-bottom: 0; /* No extra margin for last paragraph */
 }
 
-/* Footer styling */
+/* Consistent button styling */
+button {
+    background-color: #f4b400;
+    color: #222;
+    border: none;
+    padding: 0.75em 1.5em;
+    font-size: 1.1em;
+    margin-top: 1.5em;
+    cursor: pointer;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffcc00;
+}
+
+/* Footer styling (applies to all pages) */
 footer {
     background-color: #333;
     color: #fff;
     padding: 1.5em 0;
     text-align: center;
     width: 100%;
-    position: relative; /* Normal positioning for footer */
+    margin-top: auto;
 }
 
 footer p {
@@ -79,7 +101,7 @@ footer p {
 }
 
 footer p a {
-    color: #f4b400;
+    color: #f4b400; /* Matching link color */
     text-decoration: none;
 }
 
@@ -89,12 +111,12 @@ footer p a:hover {
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
-    #about {
+    .container {
         padding: 1.5em;
         margin: 1.5em;
     }
 
-    #about h1 {
+    h1 {
         font-size: 2em;
     }
 }
