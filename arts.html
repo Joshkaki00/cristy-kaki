@@ -13,9 +13,27 @@
             margin: 0;
             padding: 0;
             background-color: #faf3e0;
-            display: flex;
-            justify-content: center;
-            padding: 20px;
+        }
+
+        /* Navigation bar styles */
+        nav {
+            background-color: #2c3e50;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            letter-spacing: 1px;
+            font-family: 'Lora', serif;
+        }
+
+        nav a:hover {
+            color: #f39c12;
         }
 
         /* Grid container */
@@ -25,6 +43,8 @@
             gap: 20px;
             max-width: 1200px;
             width: 100%;
+            margin: 20px auto;
+            padding: 0 20px;
         }
 
         /* Figure styling */
@@ -53,9 +73,6 @@
 
         /* Responsive styling */
         @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
             figcaption {
                 font-size: 1em;
             }
@@ -63,6 +80,16 @@
     </style>
 </head>
 <body>
+
+    <!-- Navigation bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="exhibition.html">Exhibition</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Gallery Grid -->
     <div class="gallery-grid">
         <figure>
             <img src="images_art/188922171_2476405545838473_1142829879236441984_n.jpg" alt="Countryside by Cristy Kaki">
